@@ -17,5 +17,5 @@ echo "$prenom-$nom:$mdp" | sudo chpasswd
 
 fi 
 
-done < Shell_Userlist.csv
+done > Shell_Userlist.csv
 
