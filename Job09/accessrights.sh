@@ -1,19 +1,19 @@
 
-while IFS= read  -r uid prénom nom mdp role ;
+while IFS= read  -r uid prenom nom mdp role ;
 do 
 if [ "$role" = "admin" ] ;
 
 then 
 
-sudo useradd -m  -G sudo "$pénom-$nom"
+sudo useradd -m  -G sudo "$prenom-$nom"
 
-echo "$prénom-$nom:$mdp" | sudo chpasswd
+echo "$prenom-$nom:$mdp" | sudo chpasswd
 
 else 
 
-sudo useradd -m "$prénom-$nom"
+sudo useradd -m "$prenom-$nom"
 
-echo "$prénom-$nom:$mdp" | sudo chpasswd
+echo "$prenom-$nom:$mdp" | sudo chpasswd
 
 fi 
 
